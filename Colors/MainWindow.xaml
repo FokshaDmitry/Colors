@@ -1,0 +1,41 @@
+﻿<Window x:Class="Colors.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Colors"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Canvas Margin="0,0,400,0">
+            <GroupBox Header="Search" Height="160" Canvas.Left="26" Canvas.Top="18" Width="248" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Canvas>
+                    <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" Canvas.Left="79" Canvas.Top="36" x:Name="SearchName"/>
+                    <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Canvas.Left="79" Canvas.Top="77" x:Name="SearchVName"/>
+                    <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Name Color" Canvas.Top="38" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                    <Button Content="Search" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="77" Canvas.Top="113" Click="Button_Click_2"/>
+                    <TextBlock TextWrapping="Wrap" Text="Vendor Name" Canvas.Top="78"/>
+
+                </Canvas>
+            </GroupBox>
+            <Button Content="Add Image" Canvas.Left="26" Canvas.Top="362" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click"/>
+            <TextBox Canvas.Left="106" TextWrapping="Wrap"  Canvas.Top="363" Width="233" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="link"/>
+            <GroupBox Height="150" Header="Add" Width="248" Canvas.Top="193" Canvas.Left="26" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Canvas>
+                    <TextBox Canvas.Left="80" TextWrapping="Wrap" Canvas.Top="40" Width="120" x:Name="AddName"/>
+                    <TextBox Canvas.Left="80" TextWrapping="Wrap" Canvas.Top="72" Width="120" x:Name="AddVName"/>
+                    <TextBlock Canvas.Left="10" TextWrapping="Wrap" Text="Name Color" Canvas.Top="40" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBlock Canvas.Left="1" TextWrapping="Wrap" Text="Vendor Name" Canvas.Top="74" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+                    <Button Content="Add" Canvas.Left="80" Canvas.Top="95" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Button_Click_1"/>
+
+                </Canvas>
+            </GroupBox>
+        </Canvas>
+        <Canvas Margin="400,0,0,0">
+            <Image HorizontalAlignment="Left" Height="321" VerticalAlignment="Top" Width="245" Canvas.Left="85" Canvas.Top="53" x:Name="ColorImage"/>
+        </Canvas>
+
+    </Grid>
+</Window>
